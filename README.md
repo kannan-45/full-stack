@@ -1,11 +1,11 @@
-# 🚀 TaskFlow — Project & Task Management System
+ TaskFlow — Project & Task Management System
 
 A full-stack web application for managing projects, assigning tasks, and tracking progress with **role-based access control (Admin/Member)**.
 
-## 🌐 Live Demo
-> **[Your Railway URL here]** — Deploy in < 2 minutes (see below)
+## Live Demo
+> (https://web-production-c0131.up.railway.app/)
 
-## ✨ Features
+## Features
 
 ### Authentication
 - JWT-based signup/login with bcrypt password hashing
@@ -42,7 +42,7 @@ A full-stack web application for managing projects, assigning tasks, and trackin
 - Priority breakdown (High / Medium / Low)
 - Recent tasks table
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -52,7 +52,7 @@ A full-stack web application for managing projects, assigning tasks, and trackin
 | Frontend | Vanilla JS SPA |
 | Deployment | Railway |
 
-## 📡 REST API Endpoints
+##  REST API Endpoints
 
 ### Auth
 ```
@@ -93,7 +93,7 @@ DELETE /api/tasks/:id      — Delete task
 GET /api/dashboard         — Stats, recent tasks, priority breakdown
 ```
 
-## 🚀 Deploy to Railway (< 2 min)
+##  Deploy to Railway (< 2 min)
 
 1. Push code to GitHub:
 ```bash
@@ -113,7 +113,7 @@ JWT_SECRET=your_super_secret_key_here
 
 5. Your app is live! Click the generated URL.
 
-## 💻 Run Locally
+##  Run Locally
 
 ```bash
 # Clone & install
@@ -126,7 +126,7 @@ npm start
 # → http://localhost:3000
 ```
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ```sql
 users         — id, name, email, password, role, created_at
@@ -136,7 +136,7 @@ tasks         — id, title, description, status, priority, project_id,
                 assigned_to, due_date, created_by, created_at
 ```
 
-## 🔐 Security Features
+##  Security Features
 - Passwords hashed with bcrypt (salt rounds: 10)
 - JWT with expiry (7 days)
 - All routes protected by auth middleware
@@ -144,7 +144,7 @@ tasks         — id, title, description, status, priority, project_id,
 - SQL injection protection via parameterized queries
 - Foreign key constraints enforced
 
-## 📁 Project Structure
+## Project Structure
 ```
 taskflow/
 ├── server.js          # Express server + all API routes
